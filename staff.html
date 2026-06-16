@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Staff - Gistar - Apasionados por la Gimnasia</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700|Montserrat:400,700' rel='stylesheet'
+        type='text/css'>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Conoce más sobre Gistar, nuestro club de Gimnasia Artística y Parkour en Asunción.">
+    <meta name="keywords" content="Gistar Nosotros, Club Gimnasia Asunción, Gisselle Jara, Staff Gistar">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:title" content="Nosotros - Gistar">
+    <meta property="og:description"
+        content="Somos un club de Gimnasia Artística y Parkour en pleno centro de Asunción.">
+    <meta property="og:image" content="https://gistar.com.py/img/og-image.jpg">
+    <meta property="og:url" content="https://gistar.com.py/nosotros.html">
+    <meta property="og:site_name" content="Gistar - Apasionados por la Gimnasia">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:type" content="website">
+
+    <link rel="canonical" href="https://gistar.com.py/nosotros.html" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+
+    <link href="css/socicon.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/interface-icons.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+
+    <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+
+    <style>
+        /* --- Common Styles (adjust as needed) --- */
+        .nav-container {
+            width: 100%;
+        }
+
+        .nav-bar {
+            display: flex;
+            /* Or block, depending on your layout */
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .nav-module.menu-module.left {
+            flex-grow: 1;
+            /* Allow menu to take available space */
+        }
+
+        .menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            /* Desktop: horizontal menu items */
+        }
+
+        .menu li {
+            margin-right: 20px;
+            /* Spacing between desktop menu items */
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #333;
+            padding: 5px 0;
+        }
+
+        .nav-mobile-toggle i {
+            margin-top: -15px;
+        }
+
+        /* --- Mobile Styles --- */
+        /* Hide the menu toggle by default on desktop */
+        .nav-mobile-toggle {
+            display: none;
+            cursor: pointer;
+            font-size: 24px;
+            /* Adjust icon size */
+        }
+
+        @media (max-width: 767px) {
+            /* Adjust breakpoint as needed for 'sm' and 'xs' */
+
+            .nav-module.menu-module.left {
+                width: 100%;
+                /* Make menu module take full width on mobile */
+            }
+
+            .menu {
+                flex-direction: column;
+                /* Stack menu items vertically on mobile */
+                width: 100%;
+                display: none;
+                /* Hide the menu by default on mobile */
+                background-color: #f8f8f8;
+                /* Optional: background for mobile menu */
+                padding: 10px 0;
+            }
+
+            .menu li {
+                margin: 0;
+                /* Remove horizontal margin */
+                width: 100%;
+                /* Make list items take full width */
+                text-align: center;
+                /* Center align mobile menu items */
+                border-bottom: 1px solid #eee;
+                /* Optional: separator for mobile items */
+            }
+
+            .menu li:last-child {
+                border-bottom: none;
+            }
+
+            .menu a {
+                display: block;
+                /* Make links block-level for easier tapping */
+                padding: 10px 0;
+            }
+
+            /* Show the hamburger icon on mobile */
+            .nav-mobile-toggle {
+                display: block;
+                margin-left: auto;
+                /* Push toggle to the right */
+            }
+
+            /* When a class like 'menu-open' is added to the nav-container or nav-bar by JavaScript, show the menu */
+            .nav-container.menu-open .menu,
+            .nav-bar.menu-open .menu {
+                /* Choose one, depending on where you add the class */
+                display: flex;
+                /* Or 'block' if you want a stacked list */
+            }
+
+
+            /* Initially hide the close icon */
+            .nav-mobile-toggle .close-icon {
+                display: none;
+            }
+
+            /* When menu is open, hide hamburger and show close icon */
+            .nav-container.menu-open .nav-mobile-toggle .hamburger-icon {
+                display: none;
+            }
+
+            .nav-container.menu-open .nav-mobile-toggle .close-icon {
+                display: block;
+                /* Or flex, inline-block depending on your icon's default display */
+            }
+
+            /* If you also want to rotate or animate for a smoother transition, you'd use transitions here */
+            /* Example for a single element transformation (more advanced, but very clean) */
+            /* If you're styling a single div to look like hamburger/X: */
+
+            .nav-mobile-toggle {
+                position: relative;
+                width: 30px;
+                height: 20px;
+                cursor: pointer;
+                display: block;
+            }
+
+            .nav-mobile-toggle span {
+                display: block;
+                height: 3px;
+                background-color: #333;
+                margin-bottom: 5px;
+                transition: all 0.3s ease;
+            }
+
+            .nav-mobile-toggle span:last-child {
+                margin-bottom: 0;
+            }
+
+            .nav-container.menu-open .nav-mobile-toggle span:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+
+            .nav-container.menu-open .nav-mobile-toggle span:nth-child(2) {
+                opacity: 0;
+            }
+
+            .nav-container.menu-open .nav-mobile-toggle span:nth-child(3) {
+                transform: rotate(-45deg) translate(5px, -5px);
+            }
+
+
+        }
+
+        .justify-text {
+            text-align: justify;
+        }
+    </style>
+
+</head>
+
+<body data-reveal-selectors="section:not(.masonry):not(:first-of-type):not(.parallax)">
+
+
+    <div class="nav-container">
+
+        <nav>
+            <div class="nav-bar">
+                <div class="nav-module menu-module left">
+                    <ul class="menu">
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <a href="/staff">Staff</a>
+                        </li>
+                        <li>
+                            <a href="/gisselle-jara">La Directora</a>
+                        </li>
+                        <li>
+                            <a href="/ranking">Ranking</a>
+                        </li>
+                        <li>
+                            <a href="/reglamento">Reglamento</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-mobile-toggle visible-sm visible-xs">
+                    <i class="icon-Align-JustifyAll icon icon--sm hamburger-icon"></i>
+                    <i class="icon-Close icon icon--sm close-icon"></i>
+                </div>
+            </div>
+
+        </nav>
+
+    </div>
+
+    <div class="main-container">
+
+        <section class="height-100 imagebg cover cover-6" data-overlay="6">
+            <div class="background-image-holder">
+                <div class="layer-bg-overlay"></div>
+                <div class="layer-bg-image"
+                    style="background-image: url('img/60804407-7b8a-4f30-87bd-4201c5c2cd03.jpg');"></div>
+            </div>
+            <div class="container pos-vertical-center">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <h1 class="lead montserrat-400 lead-start">
+                            Nosotros
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gistar-yellow space--sm cta cta-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center">
+                        <p class="lead">
+                            Somos un club de Gimnasia Artística y Parkour en pleno centro de Asunción. Nuestro propósito
+                            es desarrollar habilidades motoras y potenciar el talento de niños, niñas, adolescentes y
+                            adultos, ya sea en el nivel inicial, recreativo o en entrenamientos de alto rendimiento.
+                        </p>
+                        <p class="lead">
+                            Fundado en marzo de 2024 por Gisselle Jara, exgimnasta de la Selección Paraguaya de
+                            Gimnasia, entrenadora, jueza y apasionada de este deporte, el club nace con la misión de
+                            crear una comunidad donde los sueños deportivos se puedan hacer realidad.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="bg--secondary">
+            <div class="container">
+                <div class="row">
+
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="img/8fa8dba3-39d7-4e78-9435-98cfbdb61917.jpg" alt="Staff Gistar"
+                            class="img-responsive">
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="justify-text">
+                            En Gistar, creemos que la excelencia no es casualidad, es el resultado de un trabajo en
+                            equipo comprometido, capacitado y profundamente apasionado por la gimnasia. Nuestro staff
+                            está conformado por profesionales con formación y experiencia en distintas áreas del
+                            entrenamiento, integrando preparación física, técnica específica, biomecánica, danza y
+                            expresión corporal, para ofrecer a cada gimnasta un desarrollo verdaderamente integral.
+                        </p>
+                        <p class="justify-text">
+                            Detrás de cada logro, cada avance y cada sonrisa en el gimnasio, hay un equipo que
+                            planifica, acompaña y guía con responsabilidad y vocación. Gisselle Jara, Darío Rojas, Meli
+                            Blanco, Laura Machuca, Thiago Enciso, Gloria Espínola, Ale García y Sol Castellano trabajan
+                            de manera coordinada para potenciar las capacidades individuales, respetando los procesos y
+                            construyendo bases sólidas que permitan crecer con seguridad y confianza. A su vez, nuestra
+                            administradora Myriam Bazzano sostiene la organización y el funcionamiento diario, brindando
+                            respaldo a las familias y garantizando una gestión ordenada y eficiente.
+                        </p>
+                        <p class="justify-text">
+                            Contamos además con el liderazgo estratégico de nuestro vicepresidente, Marcelo Alonso,
+                            experto en Inteligencia Artificial, cuya visión innovadora nos impulsa a integrar
+                            tecnología, planificación moderna y herramientas de vanguardia en la gestión deportiva. Su
+                            aporte fortalece nuestra proyección institucional y nos posiciona como un club que mira
+                            hacia el futuro, combinando tradición deportiva con innovación.
+                        </p>
+                        <p class="justify-text">
+                            En Gistar no solo entrenamos gimnastas; formamos niñas disciplinadas, seguras, perseverantes
+                            y comprometidas con sus metas. Apostamos a la capacitación constante, al trabajo en equipo y
+                            a la mejora continua, porque sabemos que cuando el equipo crece, nuestras gimnastas también
+                            crecen. Aquí cada detalle cuenta, cada entrenamiento suma y cada profesional aporta su
+                            experiencia para construir un espacio de excelencia, contención y resultados.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center mb-5">
+                        <h3>Nuestro Equipo</h3>
+                    </div>
+                </div>
+
+                <!-- Laura Machuca -->
+                <div class="row mb-5 pos-vertical-align-columns">
+                    <div class="col-sm-8">
+                        <h4>Laura Machuca</h4>
+                        <p class="justify-text">
+                            Laura Machuca es bailarina profesional en danzas paraguayas, danzas árabes y bellydance,
+                            coreógrafa y técnica especializada en gimnasia. Cuenta con formación en percusión oriental,
+                            contemporáneo, ritmos latinos, aerobic deportivo y orientación de tesis, entre otros. Es
+                            instructora de Gimnasia General y técnicas acrobáticas, técnica en Acrodance y Acrotela,
+                            entrenadora de Gimnasia Artística y Rítmica, y jueza nacional e internacional de Gimnasia
+                            Rítmica certificada por la Federación Internacional de Gimnasia. Fue jueza en los Juegos
+                            Suramericanos Asunción 2022 y actualmente se desempeña como Presidenta del Comité Técnico de
+                            Gimnasia Rítmica 2024. Se caracteriza por ser una entrenadora altamente exigente, orientada
+                            a la excelencia técnica, la disciplina y el máximo rendimiento de sus atletas.
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <!-- Espacio reservado para imagen -->
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Gloria Espínola -->
+                <div class="row mb-5 pos-vertical-align-columns">
+                    <div class="col-sm-8">
+                        <h4>Gloria Espínola</h4>
+                        <p class="justify-text">
+                            Gloria Espínola es entrenadora de gimnasia artística, apasionada por el deporte y
+                            comprometida con el desarrollo integral de sus atletas. Su trabajo se enfoca en la mejora
+                            continua de la técnica, la disciplina y la formación en valores como la constancia, el
+                            trabajo en equipo y la superación personal, manteniendo una capacitación permanente y
+                            actualización constante. Además, es Abogada y Notaria Pública, integrando el rigor técnico
+                            del ámbito jurídico con liderazgo, organización y compromiso, aplicando en cada área un
+                            enfoque profesional orientado a la excelencia. Su estilo de enseñanza es firme y
+                            estructurado, con una exigencia equilibrada que potencia el crecimiento individual.
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <!-- Espacio reservado para imagen -->
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Sol Castellano -->
+                <div class="row mb-5 pos-vertical-align-columns">
+                    <div class="col-sm-8">
+                        <h4>Sol Castellano</h4>
+                        <p class="justify-text">
+                            Sol Castellano es ex atleta de la selección paraguaya de gimnasia artística y actualmente
+                            entrenadora especializada en la formación técnica y competitiva. La disciplina y la
+                            constancia que marcaron su carrera son hoy la base de su metodología de trabajo.
+                            Perfeccionista y comprometida, mantiene una exigencia constante y consciente, buscando que
+                            cada alumna disfrute el proceso, sea feliz, fortalezca su confianza y comprenda que no
+                            existen límites cuando se trabaja con dedicación y pasión. Se mantiene en constante
+                            capacitación para brindar siempre un entrenamiento actualizado y de calidad.
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <!-- Espacio reservado para imagen -->
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Thiago Enciso -->
+                <div class="row mb-5 pos-vertical-align-columns">
+                    <div class="col-sm-8">
+                        <h4>Thiago Enciso</h4>
+                        <p class="justify-text">
+                            Thiago Enciso es ex integrante de la selección paraguaya y entrenador especializado en
+                            gimnasia artística y parkour. Su trabajo se centra en el perfeccionamiento técnico, la
+                            calidad del movimiento y la evolución constante de cada atleta, acompañando su crecimiento
+                            deportivo con disciplina y profesionalismo. Mantiene una línea de alta exigencia,
+                            priorizando procesos sólidos que permitan alcanzar un rendimiento seguro, eficiente y
+                            sostenible en el tiempo.
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <!-- Espacio reservado para imagen -->
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Meli Blanco -->
+                <div class="row mb-5 pos-vertical-align-columns">
+                    <div class="col-sm-8">
+                        <h4>Meli Blanco</h4>
+                        <p class="justify-text">
+                            Meli Blanco es entrenadora, bailarina y coreógrafa con sólida formación en desarrollo
+                            físico, técnico y artístico. Cuenta con experiencia en la enseñanza de gimnasia artística,
+                            fortalecimiento, flexibilidad, coordinación y preparación física, adaptando cada proceso
+                            según la edad, nivel y objetivos de sus alumnos. Comprometida, creativa y empática, trabaja
+                            con pasión y acompañamiento cercano, entendiendo el entrenamiento como una herramienta de
+                            crecimiento personal, disciplina y construcción de confianza.
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <!-- Espacio reservado para imagen -->
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Darío Rojas -->
+                <div class="row mb-5 pos-vertical-align-columns">
+                    <div class="col-sm-8">
+                        <h4>Darío Rojas</h4>
+                        <p class="justify-text">
+                            Darío Rojas es entrenador de gimnasia con enfoque en el desarrollo integral y la preparación
+                            física, además de profesor de deportes de combate en áreas técnicas y competitivas. Su
+                            metodología combina compromiso, disciplina, constancia e igualdad, promoviendo el respeto y
+                            el amor por el deporte como pilares fundamentales del crecimiento atlético. Mantiene una
+                            alta exigencia física, acompañando a cada atleta en el camino hacia el cumplimiento de sus
+                            metas deportivas.
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <!-- Espacio reservado para imagen -->
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Alejandra García -->
+                <div class="row mb-5 pos-vertical-align-columns">
+                    <div class="col-sm-8">
+                        <h4>Alejandra García</h4>
+                        <p class="justify-text">
+                            Alejandra García es instructora de Flexibilidad y Preparación Física, ex atleta
+                            internacional de natación federada representando a Paraguay durante 10 años. Su formación
+                            integra 12 años de Ballet Clásico, aportando alineación postural, control corporal y
+                            elegancia técnica, junto con una especialización actual en Pole Sport, flexibilidad y
+                            entrenamiento de fuerza. Su metodología se centra en el desarrollo seguro del rango de
+                            movimiento, el fortalecimiento del core y la salud articular, priorizando la prevención de
+                            lesiones en etapas de crecimiento. Mantiene una exigencia moderada y técnica, enfocada en
+                            formar gimnastas fuertes, flexibles y biomecánicamente eficientes, combinando disciplina,
+                            precisión y cuidado integral del cuerpo.
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <!-- Espacio reservado para imagen -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-1">
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14430.114372017202!2d-57.6416228!3d-25.2864387!3m2!1i1024!2i768!4f2.1!3m3!1m2!1s0x945da7c9f68bb919%3A0x93c59e9983bbd7bc!2sGistar!5e0!3m2!1sen!2spy!4v1709769414024!5m2!1sen!2spy"></iframe>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <ul class="social-list text-center">
+                        <li style="margin: 0 50px;">
+                            <a href="https://www.instagram.com/gistarpy/" target="_blank"><img alt="Instagram"
+                                    width="52" src="img/instagram-icon.svg"></a>
+                        </li>
+                        <li style="margin: 0 50px;">
+                            <a href="https://www.facebook.com/profile.php?id=61556755131073" target="_blank"><img
+                                    alt="Facebook" width="52" src="img/facebook-icon.svg"></a>
+                        </li>
+                        <li style="margin: 0 50px;">
+                            <a href="https://maps.app.goo.gl/4wHy98hsDdwFfFSy9" target="_blank"><img alt="Location"
+                                    width="40" src="img/location-icon.svg"></a>
+                        </li>
+                        <li style="margin: 0 50px;">
+                            <a href="https://wa.me/595991740715"><img alt="WhatsApp" width="52"
+                                    src="img/whatsapp-icon.svg"></a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer class="bg--dark footer-1 text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <a href="https://gistar.com.py"><img alt="GiStar" width="190"
+                                src="img/logo-gistar-withe.png"></a>
+                    </div>
+                </div>
+                <div class="row footer__lower text-center-xs">
+                    <div class="col-sm-12">
+                        <hr>
+                    </div>
+                    <div class="col-sm-12 text-center">
+                        <span class="type--fine-print">© Copyright <span class="update-year">2024</span> GiStar -
+                            Derechos Reservados</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/scrollreveal.min.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileToggle = document.querySelector('.nav-mobile-toggle');
+            const navContainer = document.querySelector('.nav-container');
+
+            if (mobileToggle && navContainer) {
+                mobileToggle.addEventListener('click', function () {
+                    navContainer.classList.toggle('menu-open');
+                });
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>

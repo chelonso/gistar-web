@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Gistar - Apasionados por la Gimnasia - Club de Gimnasia Artística en Asunción</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700|Montserrat:400,700' rel='stylesheet'
+        type='text/css'>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Somos un club de Gimnasia Artística femenina, ubicado en el centro de Asunción. Desarrollamos habilidades motoras y potenciamos el talento de niñas y adolescentes, tanto para nivel inicial como para alto rendimiento.">
+    <meta name="keywords"
+        content="Gimnasia Artística Asunción, Club de Gimnasia Femenina, Entrenamiento de alto rendimiento gimnasia, Gimnasia para niñas y adolescentes, Gimnasia recreativa Asunción, Parkour en Asunción, Kickboxing para niños y adultos, Acrotelas y acrobacias aéreas, Escuela de Gimnasia Artística Paraguay, Gisselle Jara Gimnasia Paraguaya, Entrenamiento con exgimnasta olímpica, Clases de Gimnasia para principiantes, Centro de alto rendimiento gimnasia, Formación de gimnastas en Paraguay, Gistar Gimnasia Artística">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:title" content="Gistar - Apasionados por la Gimnasia">
+    <meta property="og:description"
+        content="Somos un club de Gimnasia Artística femenina, ubicado en el centro de Asunción. Desarrollamos habilidades motoras y potenciamos el talento de niñas y adolescentes, tanto para nivel inicial como para alto rendimiento.">
+    <meta property="og:image" content="https://your-website.com/og-image.jpg">
+    <meta property="og:url" content="https://gistar.com.py/">
+    <meta property="og:site_name" content="Gistar - Apasionados por la Gimnasia">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:type" content="website">
+
+    <link rel="canonical" href="https://gistar.com.py/" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+
+    <link href="css/socicon.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/interface-icons.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+
+    <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+
+    <style>
+        /* --- Common Styles (adjust as needed) --- */
+        .nav-container {
+            width: 100%;
+        }
+
+        .nav-bar {
+            display: flex;
+            /* Or block, depending on your layout */
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .nav-module.menu-module.left {
+            flex-grow: 1;
+            /* Allow menu to take available space */
+        }
+
+        .menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            /* Desktop: horizontal menu items */
+        }
+
+        .menu li {
+            margin-right: 20px;
+            /* Spacing between desktop menu items */
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #333;
+            padding: 5px 0;
+        }
+
+        .nav-mobile-toggle i {
+            margin-top: -15px;
+        }
+
+        /* --- Mobile Styles --- */
+        /* Hide the menu toggle by default on desktop */
+        .nav-mobile-toggle {
+            display: none;
+            cursor: pointer;
+            font-size: 24px;
+            /* Adjust icon size */
+        }
+
+        @media (max-width: 767px) {
+            /* Adjust breakpoint as needed for 'sm' and 'xs' */
+
+            .nav-module.menu-module.left {
+                width: 100%;
+                /* Make menu module take full width on mobile */
+            }
+
+            .menu {
+                flex-direction: column;
+                /* Stack menu items vertically on mobile */
+                width: 100%;
+                display: none;
+                /* Hide the menu by default on mobile */
+                background-color: #f8f8f8;
+                /* Optional: background for mobile menu */
+                padding: 10px 0;
+            }
+
+            .menu li {
+                margin: 0;
+                /* Remove horizontal margin */
+                width: 100%;
+                /* Make list items take full width */
+                text-align: center;
+                /* Center align mobile menu items */
+                border-bottom: 1px solid #eee;
+                /* Optional: separator for mobile items */
+            }
+
+            .menu li:last-child {
+                border-bottom: none;
+            }
+
+            .menu a {
+                display: block;
+                /* Make links block-level for easier tapping */
+                padding: 10px 0;
+            }
+
+            /* Show the hamburger icon on mobile */
+            .nav-mobile-toggle {
+                display: block;
+                margin-left: auto;
+                /* Push toggle to the right */
+            }
+
+            /* When a class like 'menu-open' is added to the nav-container or nav-bar by JavaScript, show the menu */
+            .nav-container.menu-open .menu,
+            .nav-bar.menu-open .menu {
+                /* Choose one, depending on where you add the class */
+                display: flex;
+                /* Or 'block' if you want a stacked list */
+            }
+
+
+            /* Initially hide the close icon */
+            .nav-mobile-toggle .close-icon {
+                display: none;
+            }
+
+            /* When menu is open, hide hamburger and show close icon */
+            .nav-container.menu-open .nav-mobile-toggle .hamburger-icon {
+                display: none;
+            }
+
+            .nav-container.menu-open .nav-mobile-toggle .close-icon {
+                display: block;
+                /* Or flex, inline-block depending on your icon's default display */
+            }
+
+            /* If you also want to rotate or animate for a smoother transition, you'd use transitions here */
+            /* Example for a single element transformation (more advanced, but very clean) */
+            /* If you're styling a single div to look like hamburger/X: */
+
+            .nav-mobile-toggle {
+                position: relative;
+                width: 30px;
+                height: 20px;
+                cursor: pointer;
+                display: block;
+            }
+
+            .nav-mobile-toggle span {
+                display: block;
+                height: 3px;
+                background-color: #333;
+                margin-bottom: 5px;
+                transition: all 0.3s ease;
+            }
+
+            .nav-mobile-toggle span:last-child {
+                margin-bottom: 0;
+            }
+
+            .nav-container.menu-open .nav-mobile-toggle span:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+
+            .nav-container.menu-open .nav-mobile-toggle span:nth-child(2) {
+                opacity: 0;
+            }
+
+            .nav-container.menu-open .nav-mobile-toggle span:nth-child(3) {
+                transform: rotate(-45deg) translate(5px, -5px);
+            }
+
+
+
+        }
+    </style>
+
+</head>
+
+<body data-reveal-selectors="section:not(.masonry):not(:first-of-type):not(.parallax)">
+
+
+    <div class="nav-container">
+
+        <nav>
+            <div class="nav-bar">
+                <div class="nav-module menu-module left">
+                    <ul class="menu">
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <a href="/staff">Staff</a>
+                        </li>
+                        <li>
+                            <a href="/gisselle-jara">La Directora</a>
+                        </li>
+                        <li>
+                            <a href="/ranking">Ranking</a>
+                        </li>
+                        <li>
+                            <a href="/reglamento">Reglamento</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-mobile-toggle visible-sm visible-xs">
+                    <i class="icon-Align-JustifyAll icon icon--sm hamburger-icon"></i>
+                    <i class="icon-Close icon icon--sm close-icon"></i>
+                </div>
+            </div>
+
+        </nav>
+
+    </div>
+
+    <div class="main-container">
+
+        <section class="height-100 imagebg cover cover-6" data-overlay="6">
+            <div class="background-image-holder">
+                <div class="layer-bg-overlay"></div>
+                <div class="layer-bg-image"></div>
+            </div>
+            <div class="container pos-vertical-center">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <img class="logo logo-gistar" alt="GiStar, Apasionado por la Gimnasia"
+                            src="img/logo-gistar-alpha.png">
+                        <h1 class="lead montserrat-400 lead-start">
+                            Apasionados por la Gimnasia
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-gistar-yellow space--sm cta cta-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+
+                        <a class="btn btn-cta" href="./horarios.pdf" target="_blank">
+                            <span class="btn__text">
+                                VER HORARIOS
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="wide-grid masonry">
+            <div class="masonry__container masonry--animate masonry--active">
+
+                <div class="col-xs-6 col-md-4 col-sm-6 masonry__item">
+
+                    <div class="hover-element hover-element-1" data-title-position="top,right">
+                        <div class="hover-element__initial">
+                            <img alt="Gimnasia artística femenina, Para niñas y adolescentes de 7 a 18 años"
+                                src="img/gistar-gymnastics06.jpg">
+                        </div>
+                        <div class="hover-element__reveal" data-overlay="9">
+                            <div class="boxed">
+                                <h3>Gimnasia artística femenina</h3>
+                                <p>
+                                    <em>Para niñas y adolescentes de 7 a 18 años</em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-xs-6 col-md-4 col-sm-6 masonry__item">
+
+                    <div class="hover-element hover-element-1" data-title-position="top,right">
+                        <div class="hover-element__initial">
+                            <img alt="Baby Gym, Gimnasia artística Para niñas de 3 a 5 años"
+                                src="img/gistar-baby01.jpg">
+                        </div>
+                        <div class="hover-element__reveal" data-overlay="9">
+                            <div class="boxed">
+                                <h3>Gimnasia mini</h3>
+                                <p>
+                                    <em>Gimnasia artística Para niñas de 4 a 5 años</em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-xs-6 col-md-4 col-sm-6 masonry__item">
+
+                    <div class="hover-element hover-element-1" data-title-position="top,right">
+                        <div class="hover-element__initial">
+                            <img alt="Kickboxing, Deporte de contacto para niños, adolescentes y adultos"
+                                src="img/gistar-kickboxing03.jpg">
+                        </div>
+                        <div class="hover-element__reveal" data-overlay="9">
+                            <div class="boxed">
+                                <h3>Kickboxing</h3>
+                                <p>
+                                    <em>Deporte de contacto para niños, adolescentes y adultos</em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-xs-6 col-md-4 col-sm-6 masonry__item">
+
+                    <div class="hover-element hover-element-1" data-title-position="top,right">
+                        <div class="hover-element__initial">
+                            <img alt="Gimnasia para adultos, Clases de gimnasia artística para todas las edades y sexos"
+                                src="img/gistar-gymnastics01.jpg">
+                        </div>
+                        <div class="hover-element__reveal" data-overlay="9">
+                            <div class="boxed">
+                                <h3>Gimnasia para adultos</h3>
+                                <p>
+                                    <em>Clases de gimnasia artística para todas las edades y sexos</em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-xs-6 col-md-4 col-sm-6 masonry__item">
+
+                    <div class="hover-element hover-element-1" data-title-position="top,right">
+                        <div class="hover-element__initial">
+                            <img alt="Parkour, No te pierdas de la nueva modalidad urbana que revoluciona la acrobacia"
+                                src="img/gistar-parkour01.jpg">
+                        </div>
+                        <div class="hover-element__reveal" data-overlay="9">
+                            <div class="boxed">
+                                <h3>Parkour</h3>
+                                <p>
+                                    <em>No te pierdas de la nueva modalidad urbana que revoluciona la acrobacia</em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-xs-6 col-md-4 col-sm-6 masonry__item">
+
+                    <div class="hover-element hover-element-1" data-title-position="top,right">
+                        <div class="hover-element__initial">
+                            <img alt="Open Gym, Dirigido a pole dancers, bailarines y acróbatas"
+                                src="img/gistar-open02.png"">
+                            </div>
+                            <div class=" hover-element__reveal" data-overlay="9">
+                            <div class="boxed">
+                                <h3>Open Gym</h3>
+                                <p>
+                                    <em>Dirigido a pole dancers, bailarines y acróbatas</em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="map-1">
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14430.114372017202!2d-57.6416228!3d-25.2864387!3m2!1i1024!2i768!4f2.1!3m3!1m2!1s0x945da7c9f68bb919%3A0x93c59e9983bbd7bc!2sGistar!5e0!3m2!1sen!2spy!4v1709769414024!5m2!1sen!2spy"></iframe>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <!--<div class="col-sm-8 col-sm-offset-2">
+                        <form class="form--square form-email"
+                            data-success="Thanks for your enquiry, we'll be in touch soon"
+                            data-error="Please fill all required fields">
+                            <h4 class="text-center">Contactanos</h4>
+                            <div class="input-with-icon col-sm-12">
+                                <i class="icon-MaleFemale"></i>
+                                <input class="validate-required" type="text" name="name" placeholder="Nombre">
+                            </div>
+                            <div class="input-with-icon col-sm-6">
+                                <i class="icon-Email"></i>
+                                <input class="validate-required validate-email" type="email" name="email"
+                                    placeholder="Correo Electronico">
+                            </div>
+                            <div class="input-with-icon col-sm-6">
+                                <i class="icon-Phone-2"></i>
+                                <input type="tel" name="telephone" placeholder="Telefono">
+                            </div>
+                            <div class="col-sm-12">
+                                <textarea class="validate-required" name="message" placeholder="Mensaje"
+                                    rows="8"></textarea>
+                            </div>
+                            <div class="col-sm-12">
+                                <button type="submit" class="btn btn--primary vpe">
+                                    Enviar
+                                </button>
+                            </div>
+                        </form>
+                    </div>-->
+
+                    <ul class="social-list text-center">
+                        <li style="margin: 0 50px;">
+                            <a href="https://www.instagram.com/gistarpy/" target="_blank"><img alt="Instagram"
+                                    width="52" src="img/instagram-icon.svg"></a>
+                        </li>
+                        <li style="margin: 0 50px;">
+                            <a href="https://www.facebook.com/profile.php?id=61556755131073" target="_blank"><img
+                                    alt="Facebook" width="52" src="img/facebook-icon.svg"></a>
+                        </li>
+                        <li style="margin: 0 50px;">
+                            <a href="https://maps.app.goo.gl/4wHy98hsDdwFfFSy9" target="_blank"><img alt="Location"
+                                    width="40" src="img/location-icon.svg"></a>
+                        </li>
+                        <li style="margin: 0 50px;">
+                            <a href="https://wa.me/595991740715"><img alt="WhatsApp" width="52"
+                                    src="img/whatsapp-icon.svg"></a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="main-modal modal-container" data-autoshow="500">
+            <div class="modal-content height--natural">
+                <div class="card card-1">
+                    <div class="card__body boxed bg--white text-center">
+                        <div class="card__title">
+                            <h4>Seleccione una Modalidad</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form class="modal-form">
+                                <select name="sport" class="sport-select">
+                                    <option value="babygym">Baby Gym</option>
+                                    <option value="femalegymnastics">Gimnasia artística femenina</option>
+                                    <option value="allgymnastics">Gimnasia artística adultos</option>
+                                    <option value="kickbpxing">Kick Boxing</option>
+                                    <option value="parkour">Parkour</option>
+                                    <option value="opengym">Open Gym</option>
+                                </select>
+                            </form>
+                            <p class="sport-content">
+
+                            </p>
+                        </div>
+
+                        <a href="" class="modal-close btn btn--sm">
+                            <span class="btn__text">
+                                Cerrar
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--end of modal-content-->
+        </div>
+        <!--end of modal-container-->
+
+        <footer class="bg--dark footer-1 text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <a href="https://gistar.com.py"><img alt="GiStar" width="190"
+                                src="img/logo-gistar-withe.png"></a>
+                    </div>
+                </div>
+                <div class="row footer__lower text-center-xs">
+                    <div class="col-sm-12">
+                        <hr>
+                    </div>
+                    <div class="col-sm-12 text-center">
+                        <span class="type--fine-print">© Copyright <span class="update-year">2024</span> GiStar -
+                            Derechos Reservados</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/scrollreveal.min.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <script>
+
+       /*
+	    mr = (function (mr, $, window, document) {
+            "use strict";
+
+            console.log('MR closure');
+
+            var MainModal = $('.main-modal.modal-container');
+            var SportSelect = MainModal.find('select.sport-select');
+            var SportContent = MainModal.find('p.sport-content');
+            var BtnCTA = $('a.btn.btn-cta');
+            var ModalCloseBTN = MainModal.find('a.modal-close.btn');
+
+            var GiSportsData = [{
+                id: "femalegymnastics",
+                name: "Gimnasia artística femenina",
+                desc: "Para niñas y adolescentes de 6 a 14 años",
+                content: ""
+                    + "<b>Lunes, Miercoles y Viernes</b> <br> 6 a 10 años 18:00 a 19:00 hs. <br><br>"
+                    + "<b>Martes y Jueves</b> <br> 6 a 10 años 17:30 a 18:30 hs. <br> 11 a 14 años 18:30 a 19:30 hs.<br><br>"
+                    + "<b>Sábados</b> <br> 11 a 14 años 11:00 a 12:00 hs. <br>"
+            }, {
+                id: "allgymnastics",
+                name: "Gimnasia artística adultos",
+                desc: "Clases de gimnasia artística para todas las edades y sexos",
+                content: ""
+                    + "<b>Martes y Jueves</b> <br> Mayores de 15 años 18:30 a 19:30 hs. <br>"
+            }, {
+                id: "kickbpxing",
+                name: "Kick Boxing",
+                desc: "Deporte de contacto para niños, adolescentes y adultos",
+                content: ""
+                    + "<b>Lunes a Viernes</b> <br> niños 16:00 a 17:00  y  17:00 a 18:00 hs. </br> adultos 18:00 a 19:00  y  19:00 a 20:00 hs. <br>"
+            }, {
+                id: "parkour",
+                name: "Parkour",
+                desc: "No te pierdas de la nueva modalidad urbana que revoluciona la acrobacia",
+                content: ""
+                    + "<b>Lunes y Viernes</b> <br> 19:00 a 20:00 hs."
+            }, {
+                id: "opengym",
+                name: "Open Gym",
+                desc: "Dirigido a pole dancers, bailarines y acróbatas",
+                content: ""
+                    + "<b>Lunes a Viernes</b> <br> 20:00 hs."
+            }];
+
+            $(document).ready(function () {
+
+                //mr.modals.showModal(MainModal);
+
+                BtnCTA.on('click', function () {
+                    mr.modals.showModal(MainModal);
+                    return false;
+                });
+
+                ModalCloseBTN.on('click', function () {
+                    mr.modals.closeActiveModal();
+                    return false;
+                });
+
+                SportSelect.on('change', function (e, select) {
+                    for (const i in GiSportsData) {
+                        if (GiSportsData[i].id == e.target.value) {
+                            SportContent.html(GiSportsData[i].content);
+                        }
+                    }
+                });
+
+                let currentSportId = SportSelect.get(0).value;
+
+                for (const j in GiSportsData) {
+
+                    if (GiSportsData[j].id == currentSportId) {
+                        SportContent.html(GiSportsData[j].content);
+                    }
+                }
+
+
+
+            });
+
+            return mr;
+        
+
+        }(mr, jQuery, window, document));
+
+        */
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileToggle = document.querySelector('.nav-mobile-toggle');
+            const navContainer = document.querySelector('.nav-container'); // Or .nav-bar, depending on where you want to apply the class
+
+            if (mobileToggle && navContainer) {
+                mobileToggle.addEventListener('click', function () {
+                    navContainer.classList.toggle('menu-open'); // This class will be used by CSS to show/hide the menu
+                });
+            }
+        });
+
+    </script>
+
+
+</body>
+
+</html>

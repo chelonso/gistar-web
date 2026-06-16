@@ -1,0 +1,123 @@
+[
+  {
+    "name": "Sofia Gimenez",
+    "category": "Cat 5-6",
+    "level": "Nivel 1",
+    "age": 6,
+    "vault": 8.50,
+    "uneven_bars": 7.20,
+    "balance_beam": 8.10,
+    "floor": 9.00,
+    "points": 32.80
+  },
+  {
+    "name": "Martina Lopez",
+    "category": "Cat 5-6",
+    "level": "Nivel 1",
+    "age": 6,
+    "vault": 9.00,
+    "uneven_bars": 7.00,
+    "balance_beam": 7.50,
+    "floor": 8.80,
+    "points": 32.30
+  },
+  {
+    "name": "Valentina Perez",
+    "category": "Cat 5-6",
+    "level": "Nivel 1",
+    "age": 6,
+    "vault": 8.80,
+    "uneven_bars": 7.50,
+    "balance_beam": 7.80,
+    "floor": 8.20,
+    "points": 32.30
+  },
+  {
+    "name": "Camila Rodriguez",
+    "category": "Cat 5-6",
+    "level": "Nivel 1",
+    "age": 6,
+    "vault": 8.20,
+    "uneven_bars": 7.80,
+    "balance_beam": 8.00,
+    "floor": 8.10,
+    "points": 32.10
+  },
+  {
+    "name": "Lucia Fernandez",
+    "category": "Cat 5-6",
+    "level": "Nivel 1",
+    "age": 6,
+    "vault": 8.70,
+    "uneven_bars": 7.10,
+    "balance_beam": 7.90,
+    "floor": 8.30,
+    "points": 32.00
+  },
+  {
+    "name": "Elena Sanchez",
+    "category": "Cat 5-6",
+    "level": "Nivel 1",
+    "age": 6,
+    "vault": 8.00,
+    "uneven_bars": 7.90,
+    "balance_beam": 7.70,
+    "floor": 8.40,
+    "points": 32.00
+  },
+  {
+    "name": "Paula Acevedo",
+    "category": "Cat 5-6",
+    "level": "Nivel 1",
+    "age": 6,
+    "vault": 8.90,
+    "uneven_bars": 6.80,
+    "balance_beam": 7.60,
+    "floor": 8.50,
+    "points": 31.80
+  },
+  {
+    "name": "Angie Estigarribia Kegler",
+    "category": "Cat 5-6",
+    "level": "Nivel 1",
+    "age": 6,
+    "vault": 8.60,
+    "uneven_bars": 7.30,
+    "balance_beam": 7.40,
+    "floor": 8.00,
+    "points": 31.30
+  },
+  {
+    "name": "Sara Vaesken Sosa",
+    "category": "Cat 5-6",
+    "level": "Nivel 1",
+    "age": 6,
+    "vault": 8.10,
+    "uneven_bars": 7.60,
+    "balance_beam": 7.00,
+    "floor": 8.50,
+    "points": 31.20
+  },
+  {
+    "name": "Rachel Lizeth Bareiro Sánchez",
+    "category": "Cat 5-6",
+    "level": "Nivel 1",
+    "age": 6,
+    "vault": 7.90,
+    "uneven_bars": 7.70,
+    "balance_beam": 7.10,
+    "floor": 8.40,
+    "points": 31.10
+  },
+  {
+    "name": "Avril Orrego",
+    "category": "Cat 5-6",
+    "level": "Nivel 1",
+    "age": 6,
+    "vault": 8.30,
+    "uneven_bars": 7.00,
+    "balance_beam": 7.50,
+    "floor": 8.20,
+    "points": 31.00
+  }
+]

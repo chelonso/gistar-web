@@ -1,0 +1,104 @@
+/***************************
+Add your custom styles below
+****************************/
+
+.cover.cover-6 img.logo.logo-gistar {
+    max-height: 16em;
+}
+
+div.background-image-holder {
+
+    will-change: transform, top;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+    z-index: 0;
+    transition: 0.3s linear;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    opacity: 1;
+    background: #333333;
+    
+}
+
+div.background-image-holder div.layer-bg-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    opacity: .5;
+    background: #333333;
+}
+
+div.background-image-holder div.layer-bg-image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover !important;
+    background-position: 50% 25% !important;
+    z-index: 0;
+    background: #333333;
+    background-image: url(../img/gym02.jpg);
+}
+
+.montserrat-400 {
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+
+.montserrat-700 {
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+.lead-start {
+    margin-top: 50px;
+    letter-spacing: 2.1px;
+    font-size: 1.5em;
+}
+
+.bg-gistar-yellow {
+    background-color: #FB9802;
+    color: #333333;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.main-modal.modal-container select.sport-select {
+    text-transform: uppercase;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 0px;
+    border: 1px solid;
+    text-align: center;
+    padding: 0.52em 1.62em;
+}
+
+.main-modal.modal-container p.sport-content {
+    font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+    text-align: justify;
+    padding-top: 20px
+}
+
+@media only screen and (max-width: 720px){
+    
+    .cover.cover-6 img.logo.logo-gistar {
+        max-height: 8em;
+    }
+
+    .lead-start {
+        margin-top: 50px;
+        letter-spacing: 2.1px;
+        font-size: 1.1em;
+    }
+
+}

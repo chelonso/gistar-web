@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Gistar - Apasionados por la Gimnasia - Club de Gimnasia Artística en Asunción - Challenge</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Somos un club de Gimnasia Artística femenina, ubicado en el centro de Asunción. Desarrollamos habilidades motoras y potenciamos el talento de niñas y adolescentes, tanto para nivel inicial como para alto rendimiento.">
+    <meta name="keywords" content="Gimnasia Artística Asunción, Club de Gimnasia Femenina, Entrenamiento de alto rendimiento gimnasia, Gimnasia para niñas y adolescentes, Gimnasia recreativa Asunción, Parkour en Asunción, Kickboxing para niños y adultos, Acrotelas y acrobacias aéreas, Escuela de Gimnasia Artística Paraguay, Gisselle Jara Gimnasia Paraguaya, Entrenamiento con exgimnasta olímpica, Clases de Gimnasia para principiantes, Centro de alto rendimiento gimnasia, Formación de gimnastas en Paraguay, Gistar Gimnasia Artística">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff"> 
+    
+    <meta property="og:title" content="Gistar - Apasionados por la Gimnasia">
+    <meta property="og:description" content="Somos un club de Gimnasia Artística femenina, ubicado en el centro de Asunción. Desarrollamos habilidades motoras y potenciamos el talento de niñas y adolescentes, tanto para nivel inicial como para alto rendimiento.">
+    <meta property="og:image" content="https://your-website.com/og-image.jpg">
+    <meta property="og:url" content="https://gistar.com.py/">
+    <meta property="og:site_name" content="Gistar - Apasionados por la Gimnasia">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:type" content="website">
+    
+    <link rel="canonical" href="https://gistar.com.py/" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+
+    <link href="css/socicon.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/interface-icons.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+
+    <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+
+        <style>
+
+        /* --- Common Styles (adjust as needed) --- */
+        .nav-container {
+            width: 100%;
+        }
+
+        .nav-bar {
+            display: flex; /* Or block, depending on your layout */
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .nav-module.menu-module.left {
+            flex-grow: 1; /* Allow menu to take available space */
+        }
+
+        .menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex; /* Desktop: horizontal menu items */
+        }
+
+        .menu li {
+            margin-right: 20px; /* Spacing between desktop menu items */
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #333;
+            padding: 5px 0;
+        }
+
+        .nav-mobile-toggle i {
+            margin-top: -15px;
+        }
+
+        /* --- Mobile Styles --- */
+        /* Hide the menu toggle by default on desktop */
+        .nav-mobile-toggle {
+            display: none;
+            cursor: pointer;
+            font-size: 24px; /* Adjust icon size */
+        }
+
+        @media (max-width: 767px) { /* Adjust breakpoint as needed for 'sm' and 'xs' */
+            
+            .nav-module.menu-module.left {
+                width: 100%; /* Make menu module take full width on mobile */
+            }
+
+            .menu {
+                flex-direction: column; /* Stack menu items vertically on mobile */
+                width: 100%;
+                display: none; /* Hide the menu by default on mobile */
+                background-color: #f8f8f8; /* Optional: background for mobile menu */
+                padding: 10px 0;
+            }
+
+            .menu li {
+                margin: 0; /* Remove horizontal margin */
+                width: 100%; /* Make list items take full width */
+                text-align: center; /* Center align mobile menu items */
+                border-bottom: 1px solid #eee; /* Optional: separator for mobile items */
+            }
+
+            .menu li:last-child {
+                border-bottom: none;
+            }
+
+            .menu a {
+                display: block; /* Make links block-level for easier tapping */
+                padding: 10px 0;
+            }
+
+            /* Show the hamburger icon on mobile */
+            .nav-mobile-toggle {
+                display: block;
+                margin-left: auto; /* Push toggle to the right */
+            }
+
+            /* When a class like 'menu-open' is added to the nav-container or nav-bar by JavaScript, show the menu */
+            .nav-container.menu-open .menu,
+            .nav-bar.menu-open .menu { /* Choose one, depending on where you add the class */
+                display: flex; /* Or 'block' if you want a stacked list */
+            }
+
+
+            /* Initially hide the close icon */
+            .nav-mobile-toggle .close-icon {
+                display: none;
+            }
+
+            /* When menu is open, hide hamburger and show close icon */
+            .nav-container.menu-open .nav-mobile-toggle .hamburger-icon {
+                display: none;
+            }
+
+            .nav-container.menu-open .nav-mobile-toggle .close-icon {
+                display: block; /* Or flex, inline-block depending on your icon's default display */
+            }
+
+            /* If you also want to rotate or animate for a smoother transition, you'd use transitions here */
+            /* Example for a single element transformation (more advanced, but very clean) */
+            /* If you're styling a single div to look like hamburger/X: */
+            
+            .nav-mobile-toggle {
+                position: relative;
+                width: 30px;
+                height: 20px;
+                cursor: pointer;
+                display: block;
+            }
+            
+            .nav-mobile-toggle span {
+                display: block;
+                height: 3px;
+                background-color: #333;
+                margin-bottom: 5px;
+                transition: all 0.3s ease;
+            }
+            .nav-mobile-toggle span:last-child {
+                margin-bottom: 0;
+            }
+
+            .nav-container.menu-open .nav-mobile-toggle span:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+            .nav-container.menu-open .nav-mobile-toggle span:nth-child(2) {
+                opacity: 0;
+            }
+            .nav-container.menu-open .nav-mobile-toggle span:nth-child(3) {
+                transform: rotate(-45deg) translate(5px, -5px);
+            }
+            
+
+
+        }
+
+    </style>
+
+    <style>
+
+        table {
+        width: 100%; /* La tabla ocupa todo el ancho disponible */
+        border-collapse: collapse; /* Elimina el espacio entre las celdas */
+        margin-bottom: 3em; /* Espacio debajo de la tabla para separar de otros elementos */
+        background-color: #ffffff; /* Fondo blanco explícito para la tabla */
+        }
+
+        th,
+        td {
+        padding: 12px 15px; /* Más espacio interno en las celdas (arriba/abajo y lados) */
+        text-align: left; /* Alinea el texto a la izquierda */
+        border-bottom: 1px solid #ddd; /* Una línea divisoria suave en la parte inferior de cada celda */
+        }
+
+        th {
+        background-color: #f2f2f2; /* Un fondo ligeramente gris para los encabezados */
+        color: #333; /* Color de texto oscuro para los encabezados */
+        font-weight: bold; /* Texto en negrita para los encabezados */
+        }
+
+        tr:hover {
+        background-color: #f5f5f5; /* Un ligero cambio de color al pasar el ratón por encima de una fila */
+        }
+
+        /* Opcional: Estilo para la primera columna si contiene el nombre */
+        td:first-child {
+        font-weight: bold; /* Hacer la primera columna (ej. nombres) en negrita */
+        color: #555;
+        }
+
+    </style>
+
+</head>
+
+<body data-reveal-selectors="section:not(.masonry):not(:first-of-type):not(.parallax)">
+
+
+    <div class="nav-container">
+
+        <nav>
+            <div class="nav-bar">
+                <div class="nav-module menu-module left">
+                    <ul class="menu">
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <a href="/challenge.html">Challenge</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-mobile-toggle visible-sm visible-xs">
+                    <i class="icon-Align-JustifyAll icon icon--sm hamburger-icon"></i>
+                    <i class="icon-Close icon icon--sm close-icon"></i>
+                </div>
+            </div>
+            
+        </nav>
+
+    </div>
+
+    <div class="main-container">
+
+        <section class="imagebg height-60 parallax" data-overlay="8">
+        
+            <div class="background-image-holder">
+                <div class="layer-bg-overlay"></div>
+                <div class="layer-bg-image"></div>
+            </div>
+            <div class="container pos-vertical-center">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <h1 class="montserrat-700 text-uppercase">Challenge GISTAR</h1>
+                        <p class="lead montserrat-400 ">Resultados de los desafíos GISTAR</p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="bg--secondary">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <p>
+                            Aquí puedes encontrar los resultados de los desafíos GISTAR.
+                        </p>
+                        <div id="challenge-results">
+                            <!-- Los resultados del challenge se cargarán aquí dinámicamente -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <ul class="social-list text-center">
+                        <li style="margin: 0 50px;">
+                            <a href="https://www.instagram.com/gistarpy/" target="_blank"><img alt="Instagram" width="52" src="img/instagram-icon.svg"></a>
+                        </li>
+                        <li style="margin: 0 50px;">
+                            <a href="https://www.facebook.com/profile.php?id=61556755131073" target="_blank"><img alt="Facebook" width="52" src="img/facebook-icon.svg"></a>
+                        </li>
+                        <li style="margin: 0 50px;">
+                            <a href="https://maps.app.goo.gl/4wHy98hsDdwFfFSy9" target="_blank"><img alt="Location" width="40" src="img/location-icon.svg"></a>
+                        </li>
+                        <li style="margin: 0 50px;">
+                            <a href="https://wa.me/595991740715"><img alt="WhatsApp" width="52" src="img/whatsapp-icon.svg"></a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer class="bg--dark footer-1 text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <a href="https://gistar.com.py"><img alt="GiStar" width="190" src="img/logo-gistar-withe.png"></a>
+                    </div>
+                </div>
+                <div class="row footer__lower text-center-xs">
+                    <div class="col-sm-12">
+                        <hr>
+                    </div>
+                    <div class="col-sm-12 text-center">
+                        <span class="type--fine-print">© Copyright <span class="update-year">2024</span> GiStar - Derechos Reservados</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/scrollreveal.min.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/scripts.js"></script>
+
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileToggle = document.querySelector('.nav-mobile-toggle');
+            const navContainer = document.querySelector('.nav-container');
+
+            if (mobileToggle && navContainer) {
+                mobileToggle.addEventListener('click', function() {
+                    navContainer.classList.toggle('menu-open');
+                });
+            }
+
+            // Lógica para cargar y mostrar los datos del challenge
+            const challengeResultsDiv = document.getElementById('challenge-results');
+
+            async function loadChallengeData() {
+                try {
+                    const indexResponse = await fetch('/data/challenge/index.json');
+                    const indexData = await indexResponse.json();
+                    console.log('Index Data:', indexData);
+
+                    for (const level of indexData) {
+                        console.log('Loading level file:', level.level_file);
+                        const levelResponse = await fetch(level.level_file);
+                        const levelData = await levelResponse.json();
+                        console.log('Level Data for', level.level_title, ':', levelData);
+
+                        // Ordenar por puntaje final de forma descendente
+                        levelData.sort((a, b) => b.points - a.points);
+
+                        let htmlContent = `<h5>${level.level_title}</h5>`;
+                        htmlContent += `<div class="apparatus-buttons">`;
+                        // Botones para filtrar por aparatos
+                        const apparatuses = ['vault', 'uneven_bars', 'balance_beam', 'floor']; // Nombres de aparatos del JSON
+                        const displayNames = ['Salto', 'Asimétricas', 'Viga', 'Suelo']; // Nombres a mostrar
+                        apparatuses.forEach((app, i) => {
+                            htmlContent += `<button class="btn btn--sm btn--primary type--uppercase filter-button" data-apparatus="${app}">${displayNames[i]}</button>`;
+                        });
+                        htmlContent += `<button class="btn btn--sm btn--primary type--uppercase filter-button" data-apparatus="all">Total</button>`;
+                        htmlContent += `</div>`;
+                        htmlContent += `<table class="challenge-table" data-level="${level.level_title}">`;
+                        htmlContent += `<thead><tr><th>Puesto</th><th>Nombre</th><th>Salto</th><th>Asimétricas</th><th>Viga</th><th>Suelo</th><th>Puntaje</th></tr></thead>`;
+                        htmlContent += `<tbody>`;
+
+                        let currentRank = 1;
+                        let previousScore = -1;
+
+                        levelData.forEach((competitor, index) => {
+                            if (competitor.points !== previousScore) {
+                                currentRank = index + 1;
+                            }
+                            previousScore = competitor.points;
+
+                            htmlContent += `<tr data-name="${competitor.name.toLowerCase()}">`;
+                            htmlContent += `<td>${currentRank}</td>`;
+                            htmlContent += `<td>${competitor.name}</td>`;
+                            htmlContent += `<td data-apparatus="vault">${competitor.vault.toFixed(2)}</td>`;
+                            htmlContent += `<td data-apparatus="uneven_bars">${competitor.uneven_bars.toFixed(2)}</td>`;
+                            htmlContent += `<td data-apparatus="balance_beam">${competitor.balance_beam.toFixed(2)}</td>`;
+                            htmlContent += `<td data-apparatus="floor">${competitor.floor.toFixed(2)}</td>`;
+                            htmlContent += `<td data-apparatus="points">${competitor.points.toFixed(2)}</td>`;
+                            htmlContent += `</tr>`;
+                        });
+
+                        htmlContent += `</tbody></table></p>`;
+                        console.log('Generated HTML Content:', htmlContent);
+                        challengeResultsDiv.innerHTML += htmlContent;
+                    }
+
+                    // Añadir event listeners a los botones de filtro
+                    document.querySelectorAll('.filter-button').forEach(button => {
+                        button.addEventListener('click', function() {
+                            const apparatus = this.dataset.apparatus;
+                            const table = this.closest('.row').querySelector('.challenge-table');
+                            const headers = table.querySelectorAll('th');
+                            const rows = table.querySelectorAll('tbody tr');
+
+                            headers.forEach(header => header.style.display = 'table-cell'); // Mostrar todos los encabezados por defecto
+                            rows.forEach(row => row.querySelectorAll('td').forEach(cell => cell.style.display = 'table-cell')); // Mostrar todas las celdas por defecto
+
+                            if (apparatus !== 'all') {
+                                headers.forEach(header => {
+                                    if (!['Puesto', 'Nombre', apparatus].includes(header.textContent)) {
+                                        header.style.display = 'none';
+                                    }
+                                });
+                                rows.forEach(row => {
+                                    row.querySelectorAll('td').forEach(cell => {
+                                        if (!['', apparatus].includes(cell.dataset.apparatus) && cell.cellIndex > 1) { // No ocultar Puesto y Nombre
+                                            cell.style.display = 'none';
+                                        }
+                                    });
+                                });
+                            }
+                        });
+                    });
+
+
+                } catch (error) {
+                    console.error('Error al cargar los datos del challenge:', error);
+                    challengeResultsDiv.innerHTML = '<p>Error al cargar los datos del challenge.</p>';
+                }
+            }
+
+            loadChallengeData();
+        });
+
+    </script>
+
+</body>
+
+</html>
