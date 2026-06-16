@@ -1,45 +1,30 @@
-# Guía de Despliegue para Dokploy
+# Gistar Web - Dokploy Deployment Config
 
-¡Listo! Ya hemos convertido el sitio web de Gistar en un repositorio Git local, configurado el archivo `.gitignore` y creado un `Dockerfile` optimizado con Nginx para servir los archivos estáticos de forma eficiente.
+Este repositorio contiene el sitio web estático de Gistar, configurado con un servidor web **Nginx** integrado para facilitar su despliegue mediante contenedores Docker en plataformas como **Dokploy**.
 
-A continuación, sigue estos pasos para subir tu código a un repositorio remoto (como GitHub) y desplegarlo en tu instancia de Dokploy.
+## 🛠️ Configuración de Ruteo (Nginx)
 
----
-
-## Paso 1: Subir el repositorio a GitHub (o GitLab/Gitea)
-
-1. Ve a [GitHub](https://github.com) y crea un nuevo repositorio (por ejemplo, `gistar-web`).
-   - *Nota: No agregues archivos README, .gitignore o licencia en GitHub, ya que los acabamos de crear localmente.*
-
-2. En tu terminal local, dentro del directorio de este repositorio, ejecuta los siguientes comandos para vincular y subir tu código:
-
-   ```bash
-   # Cambiar el nombre de la rama por defecto a 'main' (opcional pero recomendado)
-   git branch -M main
-
-   # Agregar la dirección de tu repositorio remoto
-   git remote add origin https://github.com/TU_USUARIO/TU_REPOSITORIO.git
-
-   # Subir el código a GitHub
-   git push -u origin main
-   ```
+Hemos adaptado e integrado la configuración previa de Nginx en el contenedor para que respete las siguientes reglas:
+1. **Rutas amigables / limpias**: Configuración de `try_files` para que direcciones como `/challenge` busquen automáticamente `/challenge.html` antes de redirigir a `/index.html`.
+2. **Descarga del Reglamento**: La ruta `/reglamento` apunta como un alias al archivo PDF `/files/reglamento.pdf` y fuerza la descarga con las cabeceras correspondientes.
+3. **Caché y Optimización**: Los assets estáticos (CSS, JS, imágenes, etc.) tienen habilitada la cabecera de expiración máxima (`Cache-Control: public, max-age=31536000`).
 
 ---
 
-## Paso 2: Configurar el despliegue en Dokploy
+## 🚀 Despliegue en Dokploy
 
-Dokploy utiliza Docker y Nixpacks de manera nativa. Gracias al `Dockerfile` que hemos creado, Dokploy detectará automáticamente la configuración de Nginx y desplegará tu web sin configuraciones complejas.
+Dado que ya tenemos un `Dockerfile` y la configuración personalizada de Nginx (`default.conf`), sigue estos pasos en Dokploy para ponerlo en producción:
 
 1. **Entra a tu panel de Dokploy**.
 2. **Crea un nuevo Proyecto** (o selecciona uno existente).
 3. **Crea un nuevo Servicio** del tipo **Application** (Aplicación).
 4. Configura el origen del código (**Source**):
-   - Selecciona **GitHub** (o tu proveedor Git correspondiente). Si es la primera vez, tendrás que autorizar a Dokploy a acceder a tu cuenta o repositorio.
-   - Elige el repositorio (ej. `TU_USUARIO/TU_REPOSITORIO`) y la rama (`main`).
-5. En la sección de **Build Config** (Configuración de construcción):
-   - Dokploy debería detectar automáticamente tu `Dockerfile`. Asegúrate de que el tipo de construcción esté seleccionado como **Dockerfile** (en lugar de Nixpacks o Heroku Buildpacks).
-6. Configura los **Puertos**:
-   - Nginx por defecto corre en el puerto `80`. Dokploy expondrá automáticamente el puerto adecuado o te permitirá configurar un dominio con HTTPS (Dokploy gestiona los certificados SSL automáticamente con Let's Encrypt).
-7. Haz clic en **Deploy** (Desplegar).
+   - Selecciona **GitHub** y asocia este repositorio: `chelonso/gistar-web`.
+   - Selecciona la rama: `main`.
+5. En la sección **Build Config**:
+   - Asegúrate de seleccionar **Dockerfile** como proveedor de construcción (Dokploy detectará el `Dockerfile` que está en la raíz).
+6. Configura el **Puerto**:
+   - Expón el puerto **`80`** (que es donde Nginx escucha por defecto dentro del contenedor). Dokploy se encargará de mapearlo al puerto público de tu preferencia o asignarle un dominio con SSL automático de Let's Encrypt.
+7. Haz clic en **Deploy**.
 
-¡Y listo! Dokploy descargará el código de tu repositorio, compilará la imagen de Docker usando Nginx y expondrá el sitio web en el dominio que le asignes.
+¡Eso es todo! Dokploy construirá la imagen del contenedor y servirá el sitio web con todas las reglas de ruteo y alias configuradas.
