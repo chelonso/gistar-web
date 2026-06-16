@@ -1,30 +1,37 @@
 # Gistar Web - Dokploy Deployment Config
 
-Este repositorio contiene el sitio web estático de Gistar, configurado con un servidor web **Nginx** integrado para facilitar su despliegue mediante contenedores Docker en plataformas como **Dokploy**.
+Este repositorio contiene el sitio web estático de Gistar, configurado con tu servidor web **Nginx** original para su despliegue mediante Docker en **Dokploy**.
 
 ## 🛠️ Configuración de Ruteo (Nginx)
 
-Hemos adaptado e integrado la configuración previa de Nginx en el contenedor para que respete las siguientes reglas:
-1. **Rutas amigables / limpias**: Configuración de `try_files` para que direcciones como `/challenge` busquen automáticamente `/challenge.html` antes de redirigir a `/index.html`.
-2. **Descarga del Reglamento**: La ruta `/reglamento` apunta como un alias al archivo PDF `/files/reglamento.pdf` y fuerza la descarga con las cabeceras correspondientes.
-3. **Caché y Optimización**: Los assets estáticos (CSS, JS, imágenes, etc.) tienen habilitada la cabecera de expiración máxima (`Cache-Control: public, max-age=31536000`).
+El archivo de configuración [default.conf](file:///var/gistar/web/code/web/default.conf) contiene exactamente tu configuración original con soporte para SSL, ruteo de URLs amigables, descarga del reglamento y aliases:
+* **Root del Sitio**: `/var/www/html/web`
+* **Dominios (`server_name`)**: `www.gistar.com.py` y `gistar.com.py`
+* **Certificados SSL**:
+  - `ssl_certificate /etc/letsencrypt/live/gistar.com.py/fullchain.pem;`
+  - `ssl_certificate_key /etc/letsencrypt/live/gistar.com.py/privkey.pem;`
 
 ---
 
 ## 🚀 Despliegue en Dokploy
 
-Dado que ya tenemos un `Dockerfile` y la configuración personalizada de Nginx (`default.conf`), sigue estos pasos en Dokploy para ponerlo en producción:
+Como el `default.conf` hace uso de los certificados SSL locales (`/etc/letsencrypt`) y la carpeta de verificación de Certbot (`/var/www/certbot`), debes configurar los volumenes (**Volumes**) en Dokploy para que el contenedor Nginx tenga acceso a ellos. De lo contrario, Nginx fallará al iniciar por falta de los certificados.
 
-1. **Entra a tu panel de Dokploy**.
-2. **Crea un nuevo Proyecto** (o selecciona uno existente).
-3. **Crea un nuevo Servicio** del tipo **Application** (Aplicación).
-4. Configura el origen del código (**Source**):
-   - Selecciona **GitHub** y asocia este repositorio: `chelonso/gistar-web`.
-   - Selecciona la rama: `main`.
-5. En la sección **Build Config**:
-   - Asegúrate de seleccionar **Dockerfile** como proveedor de construcción (Dokploy detectará el `Dockerfile` que está en la raíz).
-6. Configura el **Puerto**:
-   - Expón el puerto **`80`** (que es donde Nginx escucha por defecto dentro del contenedor). Dokploy se encargará de mapearlo al puerto público de tu preferencia o asignarle un dominio con SSL automático de Let's Encrypt.
-7. Haz clic en **Deploy**.
+### Paso 1: Configurar el Servicio en Dokploy
+1. **Crea un nuevo Servicio** del tipo **Application** en Dokploy.
+2. Vincula tu repositorio `chelonso/gistar-web` y rama `main`.
+3. En **Build Config**, asegúrate de que el tipo de construcción sea **Dockerfile**.
 
-¡Eso es todo! Dokploy construirá la imagen del contenedor y servirá el sitio web con todas las reglas de ruteo y alias configuradas.
+### Paso 2: Agregar los Volúmenes (Volumes)
+En la configuración del servicio dentro de Dokploy, ve a la sección de **Volumes** y monta los directorios de tu servidor host correspondientes a Let's Encrypt y Certbot:
+
+* **Volumen de Certificados**:
+  - **Host Path**: `/etc/letsencrypt`
+  - **Mount Path**: `/etc/letsencrypt`
+* **Volumen de Certbot (Desafío ACME)**:
+  - **Host Path**: `/var/www/certbot`
+  - **Mount Path**: `/var/www/certbot`
+
+### Paso 3: Puertos y Redirección
+1. Nginx expone tanto el puerto **`80`** (HTTP) como el **`443`** (HTTPS).
+2. Configura Dokploy para exponer ambos puertos al host, o asocia los dominios `gistar.com.py` y `www.gistar.com.py` en la pestaña de Dominios apuntando directamente al puerto `443` o `80` (dependiendo de si prefieres que tu Dokploy maneje el proxy inverso SSL externo o use tu Nginx directamente).
