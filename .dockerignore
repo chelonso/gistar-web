@@ -2,3 +2,5 @@
 .gitignore
 Dockerfile
 .dockerignore
+default.conf
+README.md
